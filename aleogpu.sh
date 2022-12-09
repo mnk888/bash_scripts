@@ -28,9 +28,9 @@ function install {
     cd ~/damominer || return
     wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
     dpkg -i libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb < "/dev/null"
-    wget https://github.com/damomine/aleominer/releases/download/damominer_linux_v1.6.2/damominer_linux_v1.6.2.tar 
-    tar -xvf damominer_linux_v1.6.2.tar
-    rm damominer_linux_v1.6.2.tar
+    wget https://github.com/damomine/aleominer/releases/download/damominer_linux_v2.0.0/damominer_linux_v2.0.0.tar 
+    tar -xvf damominer_linux_v2.0.0.tar
+    rm damominer_linux_v2.0.0.tar
     rm libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
     chmod +x damominer && chmod +x run_gpu.sh
 }
