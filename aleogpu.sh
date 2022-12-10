@@ -61,10 +61,12 @@ function writeAddr {
 
 function run {
     ./run_gpu.sh
-
-    echo -e "Damominer installed and started\n"
+    echo -e "\n==========================================="
+    echo -e "Your damominer v2.0.0 installed and started\n"
     echo -e "You can check logs by the command (only from damominer folder) \e[7mtail -f aleo.log\e[0m"
     echo -e "Press \e[7mctrl+c\e[0m for exit from logs"
+    echo -e "=============================================\n"
+
     sleep 5
 }
 
@@ -75,17 +77,17 @@ do
     case $opt in
         "Yes")
             readAddr
-			install
+	    install
             writeAddr
             run
-			break
+            break
             ;;
         "No")
-			install
+	    install
             newAddr
             writeAddr
             run
-			break
+	    break
             ;;
 
         "Quit")
